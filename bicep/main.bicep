@@ -1,6 +1,6 @@
 // Parameters
 @description('Specifies the name prefix.')
-param prefix string = '$uniqueString(resourceGroup().id)'
+param prefix string = uniqueString(resourceGroup().id)
 
 @description('Specifies the location of AKS cluster.')
 param location string = resourceGroup().location
